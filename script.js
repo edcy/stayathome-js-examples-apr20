@@ -1,14 +1,34 @@
 // Third part: $('css tag').action('This is done by Javascript!')
 
-
-$('h1').text('This is done by Javascript!');
-$('p').css('border', '1px solid red');
-$('p').css('padding', '10px');
-$('h2').toggleClass('blue');
-$('h2').toggleClass('blue');
-$('h2').toggleClass('blue');
-
 console.log('Script file is loaded.');
+
+$('h2').toggleClass('blue');
+$('h2').toggleClass('blue');
+$('h2').toggleClass('blue');
+
+let name = 'Adam';
+let age = 34;
+
+
+function myLittleFuncion() {
+    $('main').append('<p> A p is appended in the main.</p>');
+    $('h1').text('This is done by Javascript!');
+    $('p').css('border', '1px solid red');
+    $('p').css('padding', '10px');
+}
+
+myLittleyFunction();
+myLittleyFunction();
+
+$('#add').click(myLittleFunction);
+$('#remove').click(function (){
+    $('p').remove();
+    $('p:last-child').remove();
+
+
+};
+
+
 
 // Single line comment
 
@@ -75,7 +95,7 @@ let backtick = 'backtick'
 undefined
 let oldEnoughToDrive = true
 undefined
-34 +5 
+34 +5
 39
 'Hello' + nema
 VM1066:1 Uncaught ReferenceError: nema is not defined
@@ -151,13 +171,13 @@ colors
 let norGoodExample = ['text', 123, true]
 undefined
 let person = {
-    name: 'Adam', 
+    name: 'Adam',
     age: 34,
     favriteColors: colors,
-    
+
 VM2583:5 Uncaught SyntaxError: Unexpected end of input
 let person = {
-    name: 'Adam', 
+    name: 'Adam',
     age: 34,
     favoriteColors: colors,
     oldEnoughToDrive: gtrue}
@@ -166,7 +186,7 @@ VM2617:5 Uncaught ReferenceError: gtrue is not defined
     at <anonymous>:5:23
 (anonymous) @ VM2617:5
 let person = {
-    name: 'Adam', 
+    name: 'Adam',
     age: 34,
     favoriteColors: colors,
     oldEnoughToDrive: true}
