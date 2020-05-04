@@ -2,31 +2,30 @@
 
 console.log('Script file is loaded.');
 
-$('h2').toggleClass('blue');
+$('h1').html('This is done by Javascript!');
 $('h2').toggleClass('blue');
 $('h2').toggleClass('blue');
 
-let name = 'Adam';
-let age = 34;
 
-
-function myLittleFuncion() {
-    $('main').append('<p> A p is appended in the main.</p>');
-    $('h1').text('This is done by Javascript!');
+function myLittleFunction() {
+    $('main').append('<p>A p is appended in the main.</p>');
     $('p').css('border', '1px solid red');
-    $('p').css('padding', '10px');
+    $('p').css('padding', '10px'); 
 }
 
-myLittleyFunction();
-myLittleyFunction();
+myLittleFunction();
 
 $('#add').click(myLittleFunction);
-$('#remove').click(function (){
-    $('p').remove();
+$('#remove').click(function() {
     $('p:last-child').remove();
+});
 
-
-};
+$('#like').click(function() {
+   let number= parseInt($('#number').html());
+   console.log(number);
+   number= number+1;
+   $('#number').html(number);
+});
 
 
 
